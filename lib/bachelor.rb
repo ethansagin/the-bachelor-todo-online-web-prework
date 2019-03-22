@@ -5,11 +5,10 @@ def get_first_name_of_season_winner(data, season)
   data[season].each do |girl|
     girl.each do |k, v|
       if k == "status" && v == "Winner"
-        winner_name = data[season][girl]
+        binding.pry
       end
     end
   end
-  binding.pry
 end
 
 def get_contestant_name(data, occupation)
