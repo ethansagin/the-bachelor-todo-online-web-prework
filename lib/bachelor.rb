@@ -10,6 +10,8 @@ def get_first_name_of_season_winner(data, season)
       end
     end
   end
+ winner_name = winner_hash["name"].split(" ")
+ binding.pry
 end
 
 def get_contestant_name(data, occupation)
