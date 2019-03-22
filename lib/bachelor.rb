@@ -7,6 +7,7 @@ def get_first_name_of_season_winner(data, season)
     girl.each do |k, v|
       if k == "status" && v == "Winner"
        winner_hash = girl
+       binding.pry
       end
     end
   end
