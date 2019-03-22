@@ -49,7 +49,6 @@ def get_occupation(data, hometown)
       girl.each do |k, v|
         if k == "hometown" && v == hometown
           target_hash = girl
-          binding.pry
         end
       end
     end
