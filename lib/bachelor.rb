@@ -4,8 +4,8 @@ def get_first_name_of_season_winner(data, season)
  winner_name = ""
   data[season].each do |girl|
     girl.each do |k, v|
+      binding.pry
       if k == "status" && v == "Winner"
-        binding.pry
       end
     end
   end
