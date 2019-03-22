@@ -14,6 +14,8 @@ def get_first_name_of_season_winner(data, season)
  winner_name[0]
 end
 
+def get_contestant_name
+
 def get_contestant_name(data, occupation)
   # code here
 end
