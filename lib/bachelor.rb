@@ -5,7 +5,7 @@ def get_first_name_of_season_winner(data, season)
   data[season].each do |girl|
     girl.each do |k, v|
       if k == "status" && v == "Winner"
-        winner_name = data[season][girl]["name"]
+        winner_name = data[season][girl].fetch("name")
       end
     end
   end
