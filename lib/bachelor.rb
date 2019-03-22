@@ -54,6 +54,7 @@ def get_occupation(data, hometown)
     end
   end
   target_hash["occupation"]
+  binding.pry
 end
 
 def get_average_age_for_season(data, season)
