@@ -1,7 +1,7 @@
 require 'pry'
 
 def get_first_name_of_season_winner(data, season)
-  data[season] do |girl, info|
+  data[season].each do |girl, info|
   binding.pry
   end
 end
