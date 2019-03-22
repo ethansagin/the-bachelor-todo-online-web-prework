@@ -34,7 +34,7 @@ def count_contestants_by_hometown(data, hometown)
     contestants.each do |girl|
       girl.each do |k, v|
         if k == "hometown" && v == hometown
-          winner_hash = girl
+          counter += 1
         end
       end
     end
