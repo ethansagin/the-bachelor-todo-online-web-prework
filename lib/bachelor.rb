@@ -1,5 +1,5 @@
 def get_first_name_of_season_winner(data, season)
-  "season #{season}"
+  data["season #{season}"].each do |girl|
   
 end
 
