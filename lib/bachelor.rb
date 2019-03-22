@@ -1,15 +1,11 @@
 require 'pry'
 
 def get_first_name_of_season_winner(data, season)
- winner_name = ""
+ winner_hash = ""
   data[season].each do |girl|
     girl.each do |k, v|
-      name = ""
-      if k == "name"
-        name = v
-      end
       if k == "status" && v == "Winner"
-        winner_name = name
+       winner_hash = girl
         binding.pry
       end
     end
