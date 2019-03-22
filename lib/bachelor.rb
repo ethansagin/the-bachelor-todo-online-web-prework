@@ -15,14 +15,17 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
+  winner_hash = nil
   data.each do |season, contestants|
     contestants.each do |girl|
       girl.each do |k, v|
         if k == "occupation" && v == occupation
-        winner_hash = girl
+          winner_hash = girl
+        end
       end
     end
   end
+  winner_hash["name"]
 end
 
 def count_contestants_by_hometown(data, hometown)
