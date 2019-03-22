@@ -67,5 +67,6 @@ def get_average_age_for_season(data, season)
     end
   end
   age_array.each {|x| sum_age += x}
-  (sum_age / age_array.length).float
+  (sum_age / age_array.length).round
+  
 end
