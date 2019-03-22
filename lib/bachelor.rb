@@ -1,7 +1,7 @@
 require 'pry'
 
 def get_first_name_of_season_winner(data, season)
- winner_name = nil
+ winner_name = ""
   data[season].each do |girl|
     girl.each do |k, v|
       if k == "status" && v == "Winner"
