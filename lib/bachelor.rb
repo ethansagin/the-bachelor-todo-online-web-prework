@@ -16,11 +16,11 @@ end
 
 def get_contestant_name(data, occupation)
   data.each do |season, contestants|
-    contestants.each do |girl, info|
-   #   girl.each do |k, v|
-  #    if k == "occupation" && v == occupation
-   #    winner_hash = girl
-      
+    contestants.each do |girl|
+      girl.each do |k, v|
+        if k == "occupation" && v == occupation
+        winner_hash = girl
+      end
     end
   end
 end
