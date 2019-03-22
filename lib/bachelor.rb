@@ -48,7 +48,8 @@ def get_occupation(data, hometown)
     contestants.each do |girl|
       girl.each do |k, v|
         if k == "hometown" && v == hometown
-          return target_hash = girl
+          target_hash = girl
+          break
         end
       end
     end
